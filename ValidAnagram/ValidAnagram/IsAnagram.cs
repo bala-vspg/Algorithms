@@ -38,6 +38,8 @@ namespace ValidAnagram
             IsValid(s1, s2);
             if (s1.Length != s2.Length)
                 return false;
+            if (s1 == s2)
+                return true;
             else
             {
                 Dictionary<char, int> chars;

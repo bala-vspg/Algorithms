@@ -53,5 +53,12 @@ namespace ValidAnagram.Tests
             IA.IsValidAnagram("rat", "cats").Should().Be(false);
 
         }
+        [TestMethod()]
+        public void IsValidAnagramTestWithequalStrings()
+        {
+            IsAnagram IA = new IsAnagram();
+            IA.IsValidAnagram("rat", "rat").Should().Be(true);
+
+        }
     }
 }
